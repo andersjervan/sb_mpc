@@ -10,7 +10,7 @@
 
 #include <vector>
 #include <cmath>
-#include <Eigen/Dense>
+#include <eigen3/Eigen/Dense>
 #include <string>
 
 class shipModel

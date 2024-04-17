@@ -8,7 +8,7 @@
 #ifndef SB_MPC_H_
 #define SB_MPC_H_
 
-#include <Eigen/Dense>
+#include <eigen3/Eigen/Dense>
 #include "ship_model.h"
 #include "obstacle.h"
 

@@ -9,7 +9,7 @@
 #include "sb_mpc.h"
 #include "ship_model.h"
 
-#include "Eigen/Dense"
+#include <eigen3/Eigen/Dense>
 #include "iostream"
 
 int main(){
@@ -33,6 +33,7 @@ int main(){
 				 3444.27, -1950.35,  5.72293,  13.2727,        0,       10,       10,       10,       10,
 				 -614.694,  735.825,  1.24093,  3.29244,        0,       10,       10,       10,       10,
 				 -522.324,  6325.05,  2.27242,        0,        0,       10,       10,       10,       10;
+
 
 	sb_mpc->getBestControlOffset(u_os, psi_os, u_d, psi_d, asv_state, obst_states);
 

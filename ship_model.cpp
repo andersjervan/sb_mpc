@@ -261,7 +261,7 @@ void shipModel::updateCtrlInput(double u_d, double psi_d, int i){
 
 double shipModel::normalize_angle(double angle){
 
-	if( isinf(angle)) return angle;
+	if( std::isinf(angle)) return angle;
 
 	while(angle <= -M_PI){
 		angle += 2*M_PI;
@@ -279,7 +279,7 @@ double shipModel::normalize_angle_diff(double angle, double angle_ref){
 	double new_angle;
 	double diff = angle_ref - angle;
 
-	if (isinf(angle) || isinf(angle_ref)) return angle;
+	if (std::isinf(angle) || std::isinf(angle_ref)) return angle;
 
 	// Get angle within 2*PI of angle_ref
 	if (diff > 0){
